@@ -5,8 +5,8 @@ const fs = require("fs");
 const config = require("./config.json");
 require("dotenv").config(); // remove this line if you are using replit
 
-client.commands = new Collection();
-client.aliases = new Collection();
+client.commands = {};
+client.aliases = {};
 client.prefix = config.prefix;
 
 module.exports = client;
